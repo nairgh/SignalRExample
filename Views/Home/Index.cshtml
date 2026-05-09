@@ -1,8 +1,21 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿<div class="container">
+    <div cass="row">
+        <div class="col-3">Total Views:</div>
+        <span class="col-4">
+            <span id="totalViewsCounter"></span>
+        </span>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    </div>
+
+    <div cass="row">
+        <div class="col-3">Total Connection/Users:</div>
+        <span class="col-4">
+            <span id="totalUsersCounter"></span>
+        </span>
+
+    </div>
+
 </div>
+
+<script src="~/js/signalr.js"></script>
+<script src="~/js/usersCount.js"></script>
